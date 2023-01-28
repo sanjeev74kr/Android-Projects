@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:text="@string/signUp"
+    android:textStyle="bold"
+    android:textAllCaps="true"
+    android:textSize="20sp"
+    android:gravity="center"
+    android:background="#FFFF00"
+    android:textColor="@color/purple_500"
+    android:layout_margin="20sp"
+    android:padding="5dp">
+
+</TextView>
+    <EditText
+        android:id="@+id/edit_fullName"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="30dp"
+        android:layout_marginHorizontal="20dp"
+        android:autofillHints="@string/fullName"
+        android:hint="@string/fullName"
+        android:textColorHint="@color/black">
+
+    </EditText>
+    <EditText
+        android:id="@+id/edit_emailId"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="15dp"
+        android:inputType="textEmailAddress"
+        android:autofillHints="@string/enter_your_id"
+        android:hint="@string/enter_your_id"
+        android:textColorHint="@color/black">
+
+    </EditText>
+
+    <EditText
+        android:id="@+id/edit_contact"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="15dp"
+        android:inputType="phone"
+        android:autofillHints="@string/contact"
+        android:hint="@string/contact"
+        android:textColorHint="@color/black">
+
+    </EditText>
+
+    <EditText
+        android:id="@+id/edit_dob"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="15dp"
+        android:autofillHints="@string/dob"
+        android:hint="@string/dob"
+        android:inputType="date"
+        android:textColorHint="@color/black">
+
+    </EditText>
+<RadioGroup
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginHorizontal="20dp">
+    <RadioButton
+        android:id="@+id/radio_male"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/male"></RadioButton>
+    <RadioButton
+        android:id="@+id/radio_female"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/female"></RadioButton>
+</RadioGroup>
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="20dp">
+        <RadioButton
+            android:id="@+id/radio_student"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/student"></RadioButton>
+        <RadioButton
+            android:id="@+id/radio_faculty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/faculty"
+            android:onClick="onClickFaculty"></RadioButton>
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/edit_uniqueId"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="15dp"
+        android:inputType="text"
+        android:autofillHints="@string/uniqueId"
+        android:hint="@string/uniqueId"
+        android:visibility="gone"
+        android:textColorHint="@color/black">
+
+    </EditText>
+
+    <EditText
+        android:id="@+id/edit_newPassword"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="15dp"
+        android:inputType="textPassword"
+        android:autofillHints="@string/newPassword"
+        android:hint="@string/newPassword"
+        android:textColorHint="@color/black">
+
+    </EditText>
+
+
+<Button
+    android:id="@+id/button_register"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/register"
+    android:layout_margin="15dp"
+    android:backgroundTint="#FFFF00"
+    android:textColor="@color/purple_500"
+    android:onClick="onClickRegister"
+    android:layout_gravity="center_horizontal">
+
+</Button>
+    </LinearLayout>
+    </ScrollView>
+</LinearLayout>

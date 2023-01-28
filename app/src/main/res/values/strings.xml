@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">QuizApp</string>
+    <string name="welcome_to_quiz_app">welcome To Quiz App</string>
+    <string name="enter_your_id">Enter your Email ID</string>
+    <string name="enter_your_password">Enter your Password</string>
+    <string name="forgot_password">Forgot Password ??</string>
+    <string name="login">Login</string>
+    <string name="don_t_have_an_account">Don\'t have an account??</string>
+    <string name="signUp">SignUp</string>
+    <string name="fullName">Enter Your Full Name</string>
+    <string name="contact">Enter Your Contact No.</string>
+    <string name="dob">Enter Your Date of Birth</string>
+    <string name="male">MALE</string>
+    <string name="female">Female</string>
+    <string name="student">STUDENT</string>
+    <string name="faculty">FACULTY</string>
+    <string name="uniqueId">Enter Your Unique ID</string>
+    <string name="newPassword">Enter Your New Password</string>
+    <string name="register">Register</string>
+</resources>
