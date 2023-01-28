@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Programs" />
+        <activity android:name=".HelloWorld" />
+        <activity android:name=".Helloc" />
+        <activity android:name=".Hellojava" />
+        <activity android:name=".Hellocc" />
+        <activity android:name=".Pallindrome" />
+        <activity android:name=".PallindromeC" />
+        <activity android:name=".Palindromejava" />
+        <activity android:name=".Pallindromecc" />
+        <activity android:name=".PrintInteger" />
+        <activity android:name=".PrintIntegerC" />
+        <activity android:name=".PrintIntegerjava" />
+        <activity android:name=".PrintIntegerCC" />
+        <activity android:name=".Factorial" />
+        <activity android:name=".FactC" />
+        <activity android:name=".Factjava" />
+        <activity android:name=".FactCC" />
+        <activity android:name=".Armstrong" />
+        <activity android:name=".ArmsC" />
+        <activity android:name=".Armsjava" />
+        <activity android:name=".Armscc" />
+        <activity android:name=".Forward" />
+        <activity android:name=".Forwardc" />
+        <activity android:name=".Forwardjava" />
+        <activity android:name=".Forwardcc" />
+        <activity android:name=".FR" />
+        <activity android:name=".FRC" />
+        <activity android:name=".Frjava" />
+        <activity android:name=".FRcc" />
+        <activity android:name=".Prime" />
+        <activity android:name=".Primec" />
+        <activity android:name=".Primejava" />
+        <activity android:name=".Primecc" />
+        <activity android:name=".Fibonoci" />
+        <activity android:name=".Fbc" />
+        <activity android:name=".Fbjava" />
+        <activity android:name=".fbcc" />
+        <activity android:name=".Diamond" />
+        <activity android:name=".Diamondc" />
+        <activity android:name=".Diamondjava" />
+        <activity android:name=".Diamondcc" />
+        <activity android:name=".Transpose" />
+        <activity android:name=".TransposeC" />
+        <activity android:name=".Transposejava" />
+        <activity android:name=".Transposecc" />
+        <activity android:name=".Compare" />
+        <activity android:name=".Swap" />
+        <activity android:name=".Comparec" />
+        <activity android:name=".comparejava" />
+        <activity android:name=".Comparecc" />
+        <activity android:name=".Swapc" />
+        <activity android:name=".Swapjava" />
+        <activity android:name=".Swapcc" />
+        <activity android:name=".Questions" />
+        <activity android:name=".Multiplication" />
+        <activity android:name=".Fact" />
+        <activity android:name=".Union" />
+        <activity android:name=".SortPointers" />
+        <activity android:name=".File" />
+        <activity android:name=".Matrix" />
+        <activity android:name=".Recursion" />
+        <activity android:name=".Removespace" />
+        <activity android:name=".Countwords" />
+        <activity android:name=".Reversewhile" />
+        <activity android:name=".Strings" />
+    </application>
+
+</manifest>
