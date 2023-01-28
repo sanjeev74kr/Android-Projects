@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/profile_upper_layout"
+        android:layout_marginTop="100dp"
+        android:layout_marginHorizontal="20dp">
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/user_profile_pic"
+            android:background="@drawable/circle_transparent"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/happy_face"></ImageView>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/userName"
+            android:id="@+id/user_name"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:drawableStart="@drawable/person_name"
+            android:drawableLeft="@drawable/person_name"
+            android:drawablePadding="5dp"
+            android:maxLines="1"
+            android:layout_marginTop="60dp">
+
+        </EditText>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="EmailId"
+            android:id="@+id/user_contact_email"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:inputType="textEmailAddress"
+            android:drawableStart="@drawable/contact_mail"
+            android:drawableLeft="@drawable/contact_mail"
+            android:drawablePadding="5dp"
+            android:maxLines="1"
+            android:layout_marginTop="10dp"></EditText>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/userContactNo"
+            android:id="@+id/user_contact_no."
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:inputType="phone"
+            android:maxLines="1"
+            android:drawableStart="@drawable/contact_no"
+            android:drawableLeft="@drawable/contact_no"
+            android:drawablePadding="5dp"
+            android:layout_marginTop="10dp"></EditText>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Address book"
+            android:id="@+id/user_address"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:drawableStart="@drawable/address_book"
+            android:drawableLeft="@drawable/address_book"
+            android:drawablePadding="5dp"
+            android:layout_marginTop="10dp"></TextView>
+
+       <!-- <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Your Payment methods"
+            android:id="@+id/user_payment_method"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:layout_marginTop="20dp"></TextView>
+-->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Your Orders"
+            android:id="@+id/user_orders"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:drawableStart="@drawable/orders"
+            android:drawableLeft="@drawable/orders"
+            android:drawablePadding="5dp"
+            android:layout_marginTop="20dp"></TextView>
+
+   <!--     <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Your favorites"
+            android:id="@+id/user_favorites"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:layout_marginTop="20dp"></TextView>
+-->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Contact us"
+            android:id="@+id/contact_us"
+            android:drawableStart="@drawable/contact_us"
+            android:drawableLeft="@drawable/contact_us"
+            android:drawablePadding="5dp"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:layout_marginTop="20dp"></TextView>
+
+   <!--     <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Give us feedback"
+            android:id="@+id/use_feedback"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:layout_marginTop="20dp"></TextView>
+-->
+        <!--<TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Delete your account"
+            android:id="@+id/deleteButton"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:padding="5dp"
+            android:background="@drawable/rectangle_shape"
+            android:layout_marginTop="40dp"></TextView>
+-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Logout"
+            android:id="@+id/logoutButton"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:padding="5dp"
+            android:drawableStart="@drawable/logout"
+            android:drawableLeft="@drawable/logout"
+            android:drawablePadding="5dp"
+            android:background="@drawable/rectangle_shape"
+            android:layout_marginTop="20dp"></TextView>
+
+    </LinearLayout>
+    <com.google.android.gms.common.SignInButton
+        android:id="@+id/signInButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true">
+
+    </com.google.android.gms.common.SignInButton>
+
+</RelativeLayout>

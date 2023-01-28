@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:id="@+id/home"
+    tools:context=".MainActivity">
+<FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/fragment_container">
+
+</FrameLayout>
+
+<androidx.cardview.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardBackgroundColor="@color/white"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="20dp"
+    android:layout_margin="10dp">
+
+    //Text view for showing user's current location
+
+<TextView
+    android:id="@+id/location"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Detecting Your Current Location......"
+    android:textSize="18sp"
+    android:textColor="@color/black"
+    android:fontFamily="Metropolis"
+    android:maxLines="1"
+    android:singleLine="true"
+    android:scrollHorizontally="true"
+    android:drawableStart="@drawable/location_icon"
+    android:padding="10dp"
+    android:drawablePadding="5dp"
+    android:drawableLeft="@drawable/location_icon">
+</TextView>
+
+</androidx.cardview.widget.CardView>
+
+    // A layout to contain map fragment
+     <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/map_container">
+</FrameLayout>
+
+ <!--   <androidx.cardview.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardBackgroundColor="@color/white"
+    app:cardCornerRadius="10dp"
+    android:layout_margin="10dp"
+    app:cardElevation="20dp">
+
+        //For searching restaurant's name dish
+
+    <androidx.appcompat.widget.SearchView
+        android:id="@+id/search_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:queryHint="search cook,dishes..."
+        android:background="@color/white"
+        app:showDividers="end"
+        app:iconifiedByDefault="false"
+        android:padding="5dp">
+    </androidx.appcompat.widget.SearchView>
+
+</androidx.cardview.widget.CardView>
+-->
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    //Including layout of showing cook catalogs in recycler view
+    <include layout="@layout/recycler_view_layout"></include>
+
+
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/bottom_navigation"
+            android:layout_gravity="bottom"
+            app:itemBackground="@color/white"
+            app:itemTextColor="@color/bottom_navigation_color"
+            app:itemIconTint="@color/bottom_navigation_color"
+            android:background="@drawable/shape"
+            app:menu="@menu/navigation"
+            android:layout_alignParentBottom="true">
+
+        </com.google.android.material.bottomnavigation.BottomNavigationView>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</LinearLayout>

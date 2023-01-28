@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "771096613499",
+    "firebase_url": "https://maaproject-66f4e-default-rtdb.firebaseio.com",
+    "project_id": "maaproject-66f4e",
+    "storage_bucket": "maaproject-66f4e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:771096613499:android:067a525333d704ce4508de",
+        "android_client_info": {
+          "package_name": "com.example.maa"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "771096613499-4411q0l43bt1s0gu01agcs4mlp7okpcr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBywzV3DD9TuGu19uq8oKsLs_wIoysP8Ts"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "771096613499-4411q0l43bt1s0gu01agcs4mlp7okpcr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

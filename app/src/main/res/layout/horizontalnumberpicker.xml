@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:background="@drawable/rectangle_with_color"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/decrementButton"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:text="-"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:textColor="@color/app_color"
+        android:gravity="center"
+        android:textAlignment="center">
+
+    </TextView>
+    <TextView
+        android:id="@+id/number"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textSize="15sp"
+        android:textColor="@color/black"
+        android:inputType="number"
+        android:gravity="center"
+        android:textAlignment="center">
+
+    </TextView>
+    <TextView
+        android:id="@+id/incrementButton"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:text="+"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/app_color"
+        android:gravity="center"
+        android:textAlignment="center">
+
+    </TextView>
+
+
+</LinearLayout>
