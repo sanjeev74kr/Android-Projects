@@ -18,4 +18,11 @@
     <string name="invalid_username">Not a valid username</string>
     <string name="invalid_password">Password must be >5 characters</string>
     <string name="login_failed">"Login failed"</string>
+
+    <!-- For numberPickerButton-->
+    <string name="zero">0</string>
+    <string name="minus">-</string>
+    <string name="plus">+</string>
+    <string name="profile_pic">profile_pic</string>
+    <string name="detecting_your_current_location">Detecting Your Current Location......</string>
 </resources>

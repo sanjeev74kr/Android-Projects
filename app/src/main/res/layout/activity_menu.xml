@@ -16,22 +16,22 @@
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginEnd="20dp"
-            android:layout_marginRight="20dp"
+            android:layout_marginEnd="@dimen/dim_20dp"
             android:orientation="vertical">
 
         <ImageView
             android:id="@+id/cookProfile"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
+            android:contentDescription="@string/profile_pic"
+            android:layout_width="@dimen/dim_100dp"
+            android:layout_height="@dimen/dim_100dp"
             android:background="@drawable/circle"
-            android:layout_marginVertical="10dp"
-            android:layout_marginHorizontal="10dp"
+            android:layout_marginVertical="@dimen/dim_10dp"
+            android:layout_marginHorizontal="@dimen/dim_10dp"
            />
 <LinearLayout
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:layout_marginTop="5dp"
+    android:layout_marginTop="@dimen/dim_5dp"
     android:layout_marginBottom="0dp"
     android:orientation="horizontal">
 
@@ -67,7 +67,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:layout_marginTop="5dp">
+            android:layout_marginTop="@dimen/dim_5dp">
 
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -78,9 +78,9 @@
                     android:id="@+id/idHolder"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginRight="50dp"
-                    android:layout_marginEnd="50dp"
-                    android:layout_marginVertical="10dp"
+                    android:layout_marginRight="@dimen/dim_50dp"
+                    android:layout_marginEnd="@dimen/dim_50dp"
+                    android:layout_marginVertical="@dimen/dim_10dp"
                     android:text="Id"
                     android:textStyle="bold"
                     android:textColor="@color/black" />
@@ -88,9 +88,9 @@
                     android:id="@+id/textId"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginVertical="10dp"
-                    android:layout_marginLeft="5dp"
-                    android:layout_marginStart="5dp"
+                    android:layout_marginVertical="@dimen/dim_10dp"
+                    android:layout_marginLeft="@dimen/dim_5dp"
+                    android:layout_marginStart="@dimen/dim_5dp"
                     android:text="cookId"
                     android:textColor="@color/black"/>
 
@@ -104,9 +104,9 @@
             android:id="@+id/nameHolder"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginRight="30dp"
-            android:layout_marginEnd="30dp"
-            android:layout_marginVertical="10dp"
+            android:layout_marginRight="@dimen/dim_30dp"
+            android:layout_marginEnd="@dimen/dim_30dp"
+            android:layout_marginVertical="@dimen/dim_10dp"
             android:text="Name"
             android:textStyle="bold"
             android:textColor="@color/black" />
@@ -114,7 +114,7 @@
                 android:id="@+id/textName"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginVertical="10dp"
+                android:layout_marginVertical="@dimen/dim_10dp"
                 android:text="cookname"
                 android:textColor="@color/black"
                 />
@@ -129,9 +129,9 @@
             android:id="@+id/ratingHolder"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginRight="30dp"
-            android:layout_marginEnd="30dp"
-            android:layout_marginVertical="10dp"
+            android:layout_marginRight="@dimen/dim_30dp"
+            android:layout_marginEnd="@dimen/dim_30dp"
+            android:layout_marginVertical="@dimen/dim_10dp"
             android:text="Rating"
                 android:textStyle="bold"
             android:textColor="@color/black"/>
@@ -140,7 +140,7 @@
                     android:id="@+id/textRating"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginVertical="10dp"
+                    android:layout_marginVertical="@dimen/dim_10dp"
                     android:text="CookRating"
                     android:textColor="@color/black" />
 
@@ -154,9 +154,9 @@
             android:id="@+id/dishHolder"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginRight="15dp"
-            android:layout_marginEnd="15dp"
-            android:layout_marginVertical="10dp"
+            android:layout_marginRight="@dimen/dim_15dp"
+            android:layout_marginEnd="@dimen/dim_15dp"
+            android:layout_marginVertical="@dimen/dim_10dp"
             android:text="Best Dish"
             android:textStyle="bold"
             android:textColor="@color/black"/>
@@ -165,7 +165,7 @@
             android:id="@+id/textDish"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginVertical="10dp"
+            android:layout_marginVertical="@dimen/dim_10dp"
             android:text="CookBestDish"
             android:textColor="@color/black" />
 </LinearLayout>
@@ -219,9 +219,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/bill"
-        app:cardCornerRadius="20dp"
+        app:cardCornerRadius="@dimen/dim_20dp"
         app:cardBackgroundColor="@color/app_color"
-        android:layout_margin="10dp"
+        android:layout_margin="@dimen/dim_10dp"
         android:visibility="gone"
         android:layout_alignParentBottom="true">
         <LinearLayout
@@ -232,10 +232,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Place Order"
-        android:textSize="25sp"
-        android:layout_margin="5dp"
+        android:textSize="@dimen/font_25sp"
+        android:layout_margin="@dimen/dim_5dp"
         android:textColor="@color/white"
-        android:padding="5dp">
+        android:padding="@dimen/dim_5dp">
 
     </TextView>
         <TextView
@@ -244,11 +244,11 @@
             android:id="@+id/amount"
             android:text="Rs.200"
 
-            android:padding="5dp"
-            android:textSize="18sp"
+            android:padding="@dimen/dim_5dp"
+            android:textSize="@dimen/font_18sp"
             android:textColor="@color/white"
-            android:layout_marginLeft="150dp"
-            android:layout_marginStart="150dp"
+            android:layout_marginLeft="@dimen/dim_150dp"
+            android:layout_marginStart="@dimen/dim_150dp"
             android:drawableEnd="@drawable/arrow_right"
             android:drawableRight="@drawable/arrow_right">
 

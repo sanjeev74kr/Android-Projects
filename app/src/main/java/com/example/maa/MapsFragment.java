@@ -76,7 +76,6 @@ public class MapsFragment extends Fragment {
                         Geocoder geocoder=new Geocoder(getActivity(), Locale.getDefault());
                         try {
                              addresses=geocoder.getFromLocation(pos.latitude,pos.longitude,1);
-
                             location_name.setText(addresses.get(0).getAddressLine(0));
                         } catch (IOException e) {
                             e.printStackTrace();

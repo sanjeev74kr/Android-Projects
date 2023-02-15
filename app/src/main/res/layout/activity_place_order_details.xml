@@ -11,15 +11,15 @@
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:id="@+id/orderDetails_layout"
-        android:layout_margin="20dp">
+        android:layout_margin="@dimen/dim_20dp">
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/orderDetails_dishName"
         android:text="DishName"
-        android:textSize="20sp"
-        android:layout_marginVertical="10dp"
+        android:textSize="@dimen/font_20sp"
+        android:layout_marginVertical="@dimen/dim_10dp"
         android:textColor="@color/black"></TextView>
 
         <TextView
@@ -27,16 +27,16 @@
             android:layout_height="wrap_content"
             android:id="@+id/orderDetails_dishQuantity"
             android:text="Quantity"
-            android:layout_marginVertical="10dp"
-            android:textSize="20sp"
+            android:layout_marginVertical="@dimen/dim_10dp"
+            android:textSize="@dimen/font_20sp"
             android:textColor="@color/black"></TextView>
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/orderDetails_cookName"
             android:text="CookName"
-            android:layout_marginVertical="10dp"
-            android:textSize="20sp"
+            android:layout_marginVertical="@dimen/dim_10dp"
+            android:textSize="@dimen/font_20sp"
             android:textColor="@color/black"></TextView>
 
         <TextView
@@ -44,8 +44,8 @@
             android:layout_height="wrap_content"
             android:id="@+id/orderDetails_netAmount"
             android:text="NetAmount"
-            android:textSize="20sp"
-            android:layout_marginVertical="10dp"
+            android:textSize="@dimen/font_20sp"
+            android:layout_marginVertical="@dimen/dim_10dp"
             android:textColor="@color/black"></TextView>
 
     </LinearLayout>
@@ -54,17 +54,17 @@
         android:layout_height="wrap_content"
         android:id="@+id/makePaymentButton"
         app:cardBackgroundColor="@color/app_color"
-        android:layout_margin="15dp"
+        android:layout_margin="@dimen/dim_15dp"
         android:layout_gravity="bottom"
         android:layout_alignParentBottom="true">
 <TextView
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:text="Make Payment"
-    android:textSize="30sp"
+    android:textSize="@dimen/font_30sp"
     android:textColor="@color/white"
     android:textStyle="bold"
-    android:padding="5dp"
+    android:padding="@dimen/dim_5dp"
     android:drawableRight="@drawable/arrow_right"
     android:drawableEnd="@drawable/arrow_right"
     android:gravity="center"></TextView>

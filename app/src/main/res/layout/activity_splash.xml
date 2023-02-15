@@ -10,8 +10,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_gravity="center"
-    android:layout_marginHorizontal="10dp"
-    android:padding="10dp"
+    android:layout_marginHorizontal="@dimen/dim_10dp"
+    android:padding="@dimen/dim_10dp"
     android:src="@drawable/spashscreen">
 
 </ImageView>

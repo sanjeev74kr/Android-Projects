@@ -30,8 +30,8 @@ public class PlaceOrderDetailsActivity extends AppCompatActivity implements Paym
         Checkout.preload(getApplicationContext());
         Intent intent=getIntent();
         netBillingAmount=intent.getDoubleExtra("billingAmount",0.0);
-    makePaymentButton=findViewById(R.id.makePaymentButton);
-    makePaymentButton.setOnClickListener(new View.OnClickListener() {
+        makePaymentButton=findViewById(R.id.makePaymentButton);
+        makePaymentButton.setOnClickListener(new View.OnClickListener() {
         @Override
         public void onClick(View v) {
             payNow(netBillingAmount);

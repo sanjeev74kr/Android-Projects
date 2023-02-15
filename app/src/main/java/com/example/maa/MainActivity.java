@@ -54,12 +54,15 @@ public class MainActivity extends AppCompatActivity {
 
     private RecyclerView recyclerView;
     private BottomNavigationView bottomNavigationView;
-    private TextView location_name; //user's current location TextView
+
+    //user's current location TextView
+    private TextView location_name;
+
     //private SearchView search;
+
     private Fragment fragment;
 
     List<Cook> cookList;
-
 
     //FusedLocationProviderClient- It is a location api in google play service used to find location
     // and it is the main entry point
@@ -78,8 +81,8 @@ public class MainActivity extends AppCompatActivity {
 
         //Initializing view
         location_name = findViewById(R.id.location);
-       // search= findViewById(R.id.search_bar);
 
+        // search= findViewById(R.id.search_bar);
 
         recyclerView = findViewById(R.id.recycle_view_layout);
 
@@ -152,7 +155,7 @@ public class MainActivity extends AppCompatActivity {
 
         //show/hide behaviour of bottom navigation on scrolling
         CoordinatorLayout.LayoutParams layoutParams = (CoordinatorLayout.LayoutParams) bottomNavigationView.getLayoutParams();
-        layoutParams.setBehavior(new BottomNavigationBahavior());
+        layoutParams.setBehavior(new BottomNavigationBehaviour());
 
         //Load Navigation item fragment
         bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {

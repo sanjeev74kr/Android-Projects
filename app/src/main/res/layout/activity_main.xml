@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -8,6 +9,7 @@
     android:background="@color/white"
     android:id="@+id/home"
     tools:context=".MainActivity">
+    
 <FrameLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -19,39 +21,38 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     app:cardBackgroundColor="@color/white"
-    app:cardCornerRadius="10dp"
-    app:cardElevation="20dp"
-    android:layout_margin="10dp">
+    app:cardCornerRadius="@dimen/dim_10dp"
+    app:cardElevation="@dimen/dim_20dp"
+    android:layout_margin="@dimen/dim_10dp">
 
-    //Text view for showing user's current location
+    <!--Text view for showing user's current location-->
 
 <TextView
     android:id="@+id/location"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:text="Detecting Your Current Location......"
-    android:textSize="18sp"
+    android:text="@string/detecting_your_current_location"
+    android:textSize="@dimen/font_18sp"
     android:textColor="@color/black"
     android:fontFamily="Metropolis"
     android:maxLines="1"
     android:singleLine="true"
     android:scrollHorizontally="true"
-    android:drawableStart="@drawable/location_icon"
-    android:padding="10dp"
-    android:drawablePadding="5dp"
-    android:drawableLeft="@drawable/location_icon">
+    app:drawableStart="@drawable/location_icon"
+    android:padding="@dimen/dim_10dp"
+    android:drawablePadding="@dimen/dim_5dp">
 </TextView>
 
 </androidx.cardview.widget.CardView>
 
-    // A layout to contain map fragment
+    <!-- A layout to contain map fragment-->
      <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:id="@+id/map_container">
 </FrameLayout>
 
- <!--   <androidx.cardview.widget.CardView
+ <!--   <androidx.cardView.widget.CardView
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     app:cardBackgroundColor="@color/white"
@@ -72,15 +73,15 @@
         android:padding="5dp">
     </androidx.appcompat.widget.SearchView>
 
-</androidx.cardview.widget.CardView>
+</androidx.cardView.widget.CardView>
 -->
 
     <androidx.coordinatorlayout.widget.CoordinatorLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
-    //Including layout of showing cook catalogs in recycler view
-    <include layout="@layout/recycler_view_layout"></include>
+    <!--Including layout of showing cook catalogs in recycler view-->
+    <include layout="@layout/recycler_view_layout"/>
 
 
 

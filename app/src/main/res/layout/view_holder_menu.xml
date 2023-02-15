@@ -9,9 +9,9 @@
     android:layout_height="wrap_content"
     android:id="@+id/menuCard"
     app:cardBackgroundColor="@color/white"
-    app:cardCornerRadius="10dp"
-    app:cardElevation="20dp"
-    android:layout_margin="10dp">
+    app:cardCornerRadius="@dimen/dim_10dp"
+    app:cardElevation="@dimen/dim_20dp"
+    android:layout_margin="@dimen/dim_10dp">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -19,13 +19,13 @@
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="10dp"
+            android:layout_margin="@dimen/dim_10dp"
             android:orientation="vertical">
 
             <ImageView
                 android:id="@+id/dishImage"
-                android:layout_width="80dp"
-                android:layout_height="80dp"
+                android:layout_width="@dimen/dim_80dp"
+                android:layout_height="@dimen/dim_80dp"
                 android:background="@drawable/shape"
                 android:scaleType="fitXY"
                 android:src="@drawable/biryani">
@@ -38,10 +38,10 @@
                android:text="Biryani"
                android:gravity="center"
                android:textAlignment="center"
-               android:layout_marginTop="3dp"
-               android:textSize="20sp"
-               android:padding="3dp"
-               android:layout_marginHorizontal="5dp"
+               android:layout_marginTop="@dimen/dim_3dp"
+               android:textSize="@dimen/font_20sp"
+               android:padding="@dimen/dim_3dp"
+               android:layout_marginHorizontal="@dimen/dim_5dp"
                android:textColor="@color/black"
                android:background="@drawable/rectangle_shape"
                android:fontFamily="Roboto">
@@ -51,8 +51,8 @@
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="75dp"
-            android:layout_marginLeft="75dp"
+            android:layout_marginStart="@dimen/dim_75dp"
+            android:layout_marginLeft="@dimen/dim_75dp"
 
             android:orientation="vertical">
             <LinearLayout
@@ -64,23 +64,23 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Quantity"
-                    android:textSize="15sp"
+                    android:textSize="@dimen/font_15sp"
                     android:textColor="@color/black"
                     android:textStyle="bold"
-                    android:layout_marginVertical="3dp"
-                    android:layout_marginEnd="10dp"
-                    android:layout_marginRight="10dp">
+                    android:layout_marginVertical="@dimen/dim_3dp"
+                    android:layout_marginEnd="@dimen/dim_10dp"
+                    android:layout_marginRight="@dimen/dim_10dp">
                 </TextView>
                 <TextView
                     android:id="@+id/text_price"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Price"
-                    android:textSize="15sp"
+                    android:textSize="@dimen/font_15sp"
                     android:textColor="@color/black"
-                    android:layout_marginVertical="3dp"
-                    android:layout_marginStart="70dp"
-                    android:layout_marginLeft="70dp"
+                    android:layout_marginVertical="@dimen/dim_3dp"
+                    android:layout_marginStart="@dimen/dim_70dp"
+                    android:layout_marginLeft="@dimen/dim_70dp"
                     android:textStyle="bold">
                 </TextView>
             </LinearLayout>
@@ -97,10 +97,10 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Half"
-                    android:textSize="15sp"
+                    android:textSize="@dimen/font_15sp"
                     android:textColor="@color/black"
-                    android:layout_marginRight="10dp"
-                        android:layout_marginEnd="10dp">
+                    android:layout_marginRight="@dimen/dim_10dp"
+                        android:layout_marginEnd="@dimen/dim_10dp">
                 </RadioButton>
 
     <RadioButton
@@ -108,10 +108,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Full"
-        android:textSize="15sp"
+        android:textSize="@dimen/font_15sp"
         android:textColor="@color/black"
-        android:layout_marginRight="10dp"
-        android:layout_marginEnd="10dp">
+        android:layout_marginRight="@dimen/dim_10dp"
+        android:layout_marginEnd="@dimen/dim_10dp">
     </RadioButton>
 
 </RadioGroup>
@@ -125,10 +125,10 @@
             android:layout_height="wrap_content"
             android:text="100"
             android:textColor="@color/black"
-            android:textSize="15sp"
-            android:layout_marginTop="17dp"
-            android:layout_marginStart="70dp"
-            android:layout_marginLeft="70dp">
+            android:textSize="@dimen/font_15sp"
+            android:layout_marginTop="@dimen/dim_17dp"
+            android:layout_marginStart="@dimen/dim_70dp"
+            android:layout_marginLeft="@dimen/dim_70dp">
         </TextView>
 
         <TextView
@@ -136,11 +136,11 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="180"
-            android:textSize="15sp"
+            android:textSize="@dimen/font_15sp"
             android:textColor="@color/black"
-            android:layout_marginTop="27dp"
-            android:layout_marginStart="70dp"
-            android:layout_marginLeft="70dp"/>
+            android:layout_marginTop="@dimen/dim_27dp"
+            android:layout_marginStart="@dimen/dim_70dp"
+            android:layout_marginLeft="@dimen/dim_70dp"/>
 
     </LinearLayout>
                 </LinearLayout>
@@ -152,9 +152,9 @@
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="5dp"
+                    android:layout_marginTop="@dimen/dim_5dp"
                     android:background="@drawable/rectangle_shape"
-                    android:padding="3dp"
+                    android:padding="@dimen/dim_3dp"
                     android:id="@+id/unitPriceLayout"
                     android:orientation="horizontal">
 
@@ -165,10 +165,10 @@
                         android:text="5"
                         android:gravity="center"
                         android:textAlignment="center"
-                        android:textSize="10sp"
-                        android:layout_marginTop="7dp"
-                        android:layout_marginBottom="2dp"
-                        android:layout_marginHorizontal="1dp"
+                        android:textSize="@dimen/font_10sp"
+                        android:layout_marginTop="@dimen/dim_7dp"
+                        android:layout_marginBottom="@dimen/dim_2dp"
+                        android:layout_marginHorizontal="@dimen/dim_1dp"
                         android:textColor="@color/black"
                         android:fontFamily="Roboto"/>
 
@@ -179,12 +179,12 @@
                         android:text="/piece"
                         android:gravity="center"
                         android:textAlignment="center"
-                        android:textSize="10sp"
-                        android:layout_marginTop="7dp"
-                        android:layout_marginBottom="2dp"
-                        android:layout_marginRight="3dp"
-                        android:layout_marginEnd="3dp"
-                        android:layout_marginHorizontal="1dp"
+                        android:textSize="@dimen/font_10sp"
+                        android:layout_marginTop="@dimen/dim_7dp"
+                        android:layout_marginBottom="@dimen/dim_2dp"
+                        android:layout_marginRight="@dimen/dim_3dp"
+                        android:layout_marginEnd="@dimen/dim_3dp"
+                        android:layout_marginHorizontal="@dimen/dim_1dp"
                         android:textColor="@color/black"
                         android:fontFamily="Roboto">
                     </TextView>
@@ -195,12 +195,12 @@
                         android:orientation="horizontal">
                 <com.example.maa.HorizontalNumberPicker
                     android:id="@+id/fullNumberPicker"
-                    android:layout_width="75dp"
-                    android:layout_height="30dp"
-                    android:layout_marginTop="4dp"
-                    android:layout_marginBottom="3dp"
-                    android:layout_marginStart="90dp"
-                    android:layout_marginLeft="90dp">
+                    android:layout_width="@dimen/dim_75dp"
+                    android:layout_height="@dimen/dim_30dp"
+                    android:layout_marginTop="@dimen/dim_4dp"
+                    android:layout_marginBottom="@dimen/dim_3dp"
+                    android:layout_marginStart="@dimen/dim_90dp"
+                    android:layout_marginLeft="@dimen/dim_90dp">
                 </com.example.maa.HorizontalNumberPicker>
                 </LinearLayout>
                 </LinearLayout>

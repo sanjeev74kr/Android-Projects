@@ -11,11 +11,11 @@
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:id="@+id/profile_upper_layout"
-        android:layout_marginTop="100dp"
-        android:layout_marginHorizontal="20dp">
+        android:layout_marginTop="@dimen/dim_100dp"
+        android:layout_marginHorizontal="@dimen/dim_20dp">
         <ImageView
-            android:layout_width="100dp"
-            android:layout_height="100dp"
+            android:layout_width="@dimen/dim_100dp"
+            android:layout_height="@dimen/dim_100dp"
             android:id="@+id/user_profile_pic"
             android:background="@drawable/circle_transparent"
             android:layout_gravity="center_horizontal"
@@ -27,12 +27,12 @@
             android:text="@string/userName"
             android:id="@+id/user_name"
             android:textColor="@color/black"
-            android:textSize="18sp"
+            android:textSize="@dimen/font_18sp"
             android:drawableStart="@drawable/person_name"
             android:drawableLeft="@drawable/person_name"
-            android:drawablePadding="5dp"
+            android:drawablePadding="@dimen/dim_5dp"
             android:maxLines="1"
-            android:layout_marginTop="60dp">
+            android:layout_marginTop="@dimen/dim_60dp">
 
         </EditText>
         <EditText
@@ -41,13 +41,13 @@
             android:text="EmailId"
             android:id="@+id/user_contact_email"
             android:textColor="@color/black"
-            android:textSize="18sp"
+            android:textSize="@dimen/font_18sp"
             android:inputType="textEmailAddress"
             android:drawableStart="@drawable/contact_mail"
             android:drawableLeft="@drawable/contact_mail"
-            android:drawablePadding="5dp"
+            android:drawablePadding="@dimen/dim_5dp"
             android:maxLines="1"
-            android:layout_marginTop="10dp"></EditText>
+            android:layout_marginTop="@dimen/dim_10dp"></EditText>
 
         <EditText
             android:layout_width="match_parent"
@@ -55,13 +55,13 @@
             android:text="@string/userContactNo"
             android:id="@+id/user_contact_no."
             android:textColor="@color/black"
-            android:textSize="18sp"
+            android:textSize="@dimen/font_18sp"
             android:inputType="phone"
             android:maxLines="1"
             android:drawableStart="@drawable/contact_no"
             android:drawableLeft="@drawable/contact_no"
-            android:drawablePadding="5dp"
-            android:layout_marginTop="10dp"></EditText>
+            android:drawablePadding="@dimen/dim_5dp"
+            android:layout_marginTop="@dimen/dim_10dp"></EditText>
 
         <TextView
             android:layout_width="match_parent"
@@ -69,11 +69,11 @@
             android:text="Address book"
             android:id="@+id/user_address"
             android:textColor="@color/black"
-            android:textSize="18sp"
+            android:textSize="@dimen/font_18sp"
             android:drawableStart="@drawable/address_book"
             android:drawableLeft="@drawable/address_book"
-            android:drawablePadding="5dp"
-            android:layout_marginTop="10dp"></TextView>
+            android:drawablePadding="@dimen/dim_5dp"
+            android:layout_marginTop="@dimen/dim_10dp"></TextView>
 
        <!-- <TextView
             android:layout_width="match_parent"
@@ -90,11 +90,11 @@
             android:text="Your Orders"
             android:id="@+id/user_orders"
             android:textColor="@color/black"
-            android:textSize="18sp"
+            android:textSize="@dimen/font_18sp"
             android:drawableStart="@drawable/orders"
             android:drawableLeft="@drawable/orders"
-            android:drawablePadding="5dp"
-            android:layout_marginTop="20dp"></TextView>
+            android:drawablePadding="@dimen/dim_5dp"
+            android:layout_marginTop="@dimen/dim_20dp"></TextView>
 
    <!--     <TextView
             android:layout_width="match_parent"
@@ -112,10 +112,10 @@
             android:id="@+id/contact_us"
             android:drawableStart="@drawable/contact_us"
             android:drawableLeft="@drawable/contact_us"
-            android:drawablePadding="5dp"
+            android:drawablePadding="@dimen/dim_5dp"
             android:textColor="@color/black"
-            android:textSize="18sp"
-            android:layout_marginTop="20dp"></TextView>
+            android:textSize="@dimen/font_18sp"
+            android:layout_marginTop="@dimen/dim_20dp"></TextView>
 
    <!--     <TextView
             android:layout_width="match_parent"
@@ -143,13 +143,13 @@
             android:text="Logout"
             android:id="@+id/logoutButton"
             android:textColor="@color/black"
-            android:textSize="20sp"
-            android:padding="5dp"
+            android:textSize="@dimen/font_20sp"
+            android:padding="@dimen/dim_5dp"
             android:drawableStart="@drawable/logout"
             android:drawableLeft="@drawable/logout"
-            android:drawablePadding="5dp"
+            android:drawablePadding="@dimen/dim_5dp"
             android:background="@drawable/rectangle_shape"
-            android:layout_marginTop="20dp"></TextView>
+            android:layout_marginTop="@dimen/dim_20dp"></TextView>
 
     </LinearLayout>
     <com.google.android.gms.common.SignInButton

@@ -17,6 +17,7 @@ public double calculateBill(double price)
     bill=bill+price;
     return bill;
 }
-    }
+
+}
 
 

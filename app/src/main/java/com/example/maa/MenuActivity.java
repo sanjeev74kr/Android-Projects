@@ -42,7 +42,8 @@ public class MenuActivity extends AppCompatActivity {
         cookBestDish=findViewById(R.id.textDish);
         profilePic=findViewById(R.id.cookProfile);
         placeOrderButton=findViewById(R.id.bill);
-         amount=findViewById(R.id.amount);
+        amount=findViewById(R.id.amount);
+
         //Display and retrieve details to new Activity
         Intent intent=getIntent();
         cook_Id =intent.getLongExtra("id",1);

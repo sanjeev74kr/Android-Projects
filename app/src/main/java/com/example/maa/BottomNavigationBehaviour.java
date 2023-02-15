@@ -15,13 +15,13 @@ import androidx.core.view.ViewCompat;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
-public class BottomNavigationBahavior extends CoordinatorLayout.Behavior<BottomNavigationView> {
+public class BottomNavigationBehaviour extends CoordinatorLayout.Behavior<BottomNavigationView> {
 
-        public BottomNavigationBahavior() {
+        public BottomNavigationBehaviour() {
             super();
         }
 
-        public BottomNavigationBahavior(Context context, AttributeSet attrs) {
+        public BottomNavigationBehaviour(Context context, AttributeSet attrs) {
             super(context, attrs);
         }
 
